@@ -52,7 +52,7 @@ Route::middleware('auth:api')->group(function(){
     Route::post('/unit/{id}/addvehicle', [UnitController::class, 'addVehicle']);
     Route::post('/unit/{id}/addpet', [UnitController::class, 'addPet']);
     Route::post('/unit/{id}/removeperson', [UnitController::class, 'removePerson']);
-    Route::post('/unit/{id}/removeveihicle', [UnitController::class, 'removeVeihicle']);
+    Route::post('/unit/{id}/removevehicle', [UnitController::class, 'removeVehicle']);
     Route::post('/unit/{id}/removepet', [UnitController::class, 'removePet']);
 
     // Reservas
