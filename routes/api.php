@@ -64,4 +64,8 @@ Route::middleware('auth:api')->group(function(){
 
     Route::get('/reservation/{id}/disableddates', [ReservationController::class, 'getDisabledDates']);
     Route::get('/reservation/{id}/times', [ReservationController::class, 'getTimes']);
+
+    Route::get('/user/{id}', [UserController::class, 'getInfo']);
+    Route::put('/user/{id}', [UserController::class, 'update']);
+    Route::put('/user/{id}/newpassword', [UserController::class, 'newPassword']);
 });
